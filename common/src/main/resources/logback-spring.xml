@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="logPath" value="${dynamic.log.path}" />
+    <property name="logLevel" value="INFO"/>
+    <property name="outPattern" value="[%-5p] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%c] - %m%n" />
+    <property name="maxHistory" value="7" />
+    <property name="charSet" value="UTF-8" />
+    <springProperty scope="context" name="log.devMode" source="log.devMode"/>
+
+<!--    控制台输出-->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <Pattern>${outPattern}</Pattern>
+            <charset>${charSet}</charset>
+        </encoder>
+    </appender>
+
+    <root level="${level}">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+</configuration>
