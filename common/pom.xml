@@ -114,17 +114,4 @@
             </plugin>
         </plugins>
     </build>
-<!--    <distributionManagement>-->
-<!--        <snapshotRepository>-->
-<!--            <id>dmall-snapshot</id>-->
-<!--            <name>dmall Snapshot</name>-->
-<!--            <url>http://nexus.dmall.com:8081/nexus/content/repositories/snapshots</url>-->
-<!--            <uniqueVersion>true</uniqueVersion>-->
-<!--        </snapshotRepository>-->
-<!--        <repository>-->
-<!--            <id>dmall-release</id>-->
-<!--            <name>dmall Release</name>-->
-<!--            <url>http://nexus.dmall.com:8081/nexus/content/repositories/releases/</url>-->
-<!--        </repository>-->
-<!--    </distributionManagement>-->
 </project>
